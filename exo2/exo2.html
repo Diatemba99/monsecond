@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#rectangle
+		{
+			background:blue;
+			width: 100px;
+			height: 100px; 
+		}
+	</style>
+</head>
+<body>
+      <button id="button1" onclick="agrandir()">Button1</button>
+      <button id="button2" onclick="vert()">Button2</button>
+      <button id="button3" onclick="initial() ">Button3</button>
+      <button id="button4" onclick="neutre()">Button4</button>
+      <button id="button5" onclick="initial()">Button5</button>
+            
+
+            <br>
+            <br>
+            <div id="rectangle"></div>
+
+      <script type="text/javascript">
+      	
+       
+	   rectangle.style.height="100px";
+	   rectangle.style.width="100px";
+       rectangle.addEventListener('click', augmente);
+            
+            function agrandir()
+            {
+            	if (rectangle.style.height <= "200px")
+            	 {
+      rectangle.style.height=parseInt(rectangle.style.height)+ 10 + "px";
+            	 	
+            	 }
+            	 else
+            	 {
+            	 	rectangle.style.height="100px";
+
+            	 }
+            }
+
+            // fonction verte de la couleur
+            function vert() 
+            {
+            var form = document.getElementById('rectangle');
+            rectangle.style.backgroundColor="green";
+
+             
+            }
+            function initial() 
+            {
+            var form = document.getElementById('rectangle');
+            rectangle.style.backgroundColor="blue";    
+            }
+            function neutre() 
+            {
+            var form = document.getElementById('rectangle');
+            rectangle.style.backgroundColor="initial";    
+            }
+
+
+        // function rectangle(argument)
+        // {
+	       //  if (form.style.height < "200px";) 
+	       //  {
+        //      form.style.height = parseInt(form.style.height)+ 10 + "px";
+	       //  }
+	       //  else
+	       //  {
+	       //  form.style.height = "100px";
+             
+	       //  }
+
+
+        // }
+      </script>
+</body>
+</html>
